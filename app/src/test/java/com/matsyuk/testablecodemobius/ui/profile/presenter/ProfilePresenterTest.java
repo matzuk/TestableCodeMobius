@@ -69,7 +69,7 @@ public class ProfilePresenterTest {
         verify(iProfileView, never()).showProgress();
         verify(iProfileView, never()).hideProgress();
         // verify showError was not called
-        verify(iProfileView, never()).showProgress();
+        verify(iProfileView, never()).showError();
         // verify calls of view methods
         InOrder inOrder = inOrder(iProfileView);
         inOrder.verify(iProfileView).setName("Ivanov S.P.");
