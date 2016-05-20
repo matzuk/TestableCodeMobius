@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_profile_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/profile_main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_margin_top"
+                android:layout_marginBottom="@dimen/main_title_margin_bottom"
+                android:textSize="@dimen/main_title_size"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/profile_main_title_name" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/profile_main_title"
+                android:layout_alignBottom="@+id/profile_main_title"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_main_title"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_cool_grey"
+                android:text="@string/profile_title_name" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_name"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="@color/common_black_87" />
+
+            <TextView
+                android:id="@+id/title_account_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/name"
+                android:layout_marginTop="@dimen/profile_fields_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_cool_grey"
+                android:text="@string/profile_title_account_number" />
+
+            <TextView
+                android:id="@+id/account_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_account_number"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="@color/common_black_87"/>
+
+            <TextView
+                android:id="@+id/title_card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_number"
+                android:layout_marginTop="@dimen/profile_fields_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_cool_grey"
+                android:text="@string/profile_title_card_number" />
+
+            <TextView
+                android:id="@+id/card_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_card_number"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="@color/common_black_87" />
+
+            <TextView
+                android:id="@+id/title_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_number"
+                android:layout_marginTop="@dimen/profile_fields_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_cool_grey"
+                android:text="@string/profile_title_balance" />
+
+            <TextView
+                android:id="@+id/balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_balance"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="@color/common_black_87"/>
+
+            <TextView
+                android:id="@+id/balance_update"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/title_balance"
+                android:layout_alignBottom="@+id/balance"
+                android:gravity="center"
+                android:textSize="@dimen/profile_text_button_size"
+                android:textColor="@color/colorAccent"
+                android:text="@string/profile_update_button_name"/>
+
+            <TextView
+                android:id="@+id/title_nearest_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/balance"
+                android:layout_marginTop="@dimen/profile_fields_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_cool_grey"
+                android:text="@string/profile_title_nearest_department" />
+
+            <TextView
+                android:id="@+id/nearest_department"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/title_nearest_department"
+                android:textSize="@dimen/profile_text_size"
+                android:textColor="@color/common_black_87" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

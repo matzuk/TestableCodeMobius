@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_transfer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/activity_horizontal_margin">
+
+            <TextView
+                android:id="@+id/transfer_main_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/main_margin_top"
+                android:layout_marginBottom="@dimen/main_title_margin_bottom"
+                android:textSize="@dimen/main_title_size"
+                android:textColor="@color/colorPrimaryDark"
+                android:text="@string/transfer_main_title_name" />
+
+            <EditText
+                android:id="@+id/org_name_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/transfer_main_title"
+                android:layout_marginRight="@dimen/transfer_et_right_margin"
+                android:layout_marginEnd="@dimen/transfer_et_right_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_black_87"
+                android:textColorHint="@color/common_cool_grey"
+                android:hint="@string/transfer_org_name_et_hint"/>
+
+            <EditText
+                android:id="@+id/bik_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/org_name_et"
+                android:layout_marginRight="@dimen/transfer_et_right_margin"
+                android:layout_marginEnd="@dimen/transfer_et_right_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_black_87"
+                android:textColorHint="@color/common_cool_grey"
+                android:hint="@string/transfer_bik_et_hint"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/inn_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/bik_et"
+                android:layout_marginRight="@dimen/transfer_et_right_margin"
+                android:layout_marginEnd="@dimen/transfer_et_right_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_black_87"
+                android:textColorHint="@color/common_cool_grey"
+                android:hint="@string/transfer_inn_et_hint"
+                android:inputType="number"/>
+
+            <EditText
+                android:id="@+id/account_number_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/inn_et"
+                android:layout_marginRight="@dimen/transfer_et_right_margin"
+                android:layout_marginEnd="@dimen/transfer_et_right_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_black_87"
+                android:textColorHint="@color/common_cool_grey"
+                android:hint="@string/transfer_account_number_et_hint"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/amount_et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/account_number_et"
+                android:layout_marginRight="@dimen/transfer_et_right_margin"
+                android:layout_marginEnd="@dimen/transfer_et_right_margin"
+                android:textSize="@dimen/profile_text_title_size"
+                android:textColor="@color/common_black_87"
+                android:textColorHint="@color/common_cool_grey"
+                android:hint="@string/transfer_amount_et_hint"
+                android:inputType="numberDecimal" />
+
+            <Button
+                android:id="@+id/send_transfer"
+                android:layout_width="@dimen/transfer_send_button_width"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/amount_et"
+                android:background="@color/colorPrimary"
+                android:textColor="@color/white"
+                android:layout_centerHorizontal="true"
+                android:text="@string/transfer_send_button_name"
+                android:layout_marginTop="@dimen/transfer_send_button_top_margin"/>
+
+            <LinearLayout
+                android:id="@+id/transfer_progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/send_transfer"
+                android:layout_marginTop="@dimen/main_margin_top"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <ProgressBar
+                    android:id="@+id/progress_bar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/title_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/profile_text_title_size"
+                    android:textColor="@color/colorAccent"
+                    android:text="@string/transfer_loading_text" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

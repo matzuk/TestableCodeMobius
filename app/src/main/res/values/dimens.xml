@@ -1,0 +1,19 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="main_title_margin_bottom">24dp</dimen>
+    <dimen name="main_margin_top">20dp</dimen>
+    <dimen name="main_title_size">24sp</dimen>
+
+    <dimen name="profile_fields_margin">16dp</dimen>
+    <dimen name="profile_text_title_size">14sp</dimen>
+    <dimen name="profile_text_size">20sp</dimen>
+    <dimen name="profile_text_button_size">18sp</dimen>
+
+    <dimen name="transfer_et_right_margin">32dp</dimen>
+    <dimen name="transfer_send_button_top_margin">32dp</dimen>
+    <dimen name="transfer_send_button_width">200dp</dimen>
+
+</resources>

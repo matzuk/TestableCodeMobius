@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">TestableCodeMobius</string>
+
+    <string name="profile_button_text">Profile</string>
+    <string name="transfer_button_text">Transfer</string>
+
+    <string name="profile_main_title_name">Profile info</string>
+    <string name="profile_title_name">Name</string>
+    <string name="profile_title_account_number">Account number</string>
+    <string name="profile_title_card_number">Card number</string>
+    <string name="profile_title_balance">Balance</string>
+    <string name="profile_title_nearest_department">Nearest department</string>
+    <string name="profile_update_button_name">Update</string>
+
+    <string name="common_error">Unexpected error was occurred</string>
+
+    <string name="transfer_main_title_name">Transfer</string>
+    <string name="transfer_org_name_et_hint">Organisation name</string>
+    <string name="transfer_bik_et_hint">BIK</string>
+    <string name="transfer_inn_et_hint">INN</string>
+    <string name="transfer_account_number_et_hint">Account number</string>
+    <string name="transfer_amount_et_hint">Amount</string>
+    <string name="transfer_send_button_name">Send transfer</string>
+    <string name="transfer_loading_text">Send transfer…</string>
+    <string name="transfer_success_text">Success transfer</string>
+
+    <string name="validation_org_name_field_empty">Org name is empty</string>
+    <string name="validation_bik_field_empty">BIK is empty</string>
+    <string name="validation_inn_field_empty">INN is empty</string>
+    <string name="validation_account_number_field_empty">Account number is empty</string>
+    <string name="validation_account_number_field_length">Account number length must be 20 symbols</string>
+    <string name="validation_amount_field_empty">Amount is empty</string>
+    <string name="validation_amount_field_not_digit">Amount must be consist of only digits</string>
+    <string name="validation_amount_field_negative">Amount must be positive</string>
+
+    <string name="server_validation_org_name">Incorrect org name</string>
+    <string name="server_validation_bik">Incorrect BIK</string>
+    <string name="server_validation_inn">Incorrect INN</string>
+    <string name="server_validation_account_number">Incorrect account number</string>
+    <string name="server_validation_amount">Incorrect amount</string>
+
+</resources>

@@ -1,0 +1,58 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+apply plugin: 'com.neenbedankt.android-apt'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.3"
+
+    defaultConfig {
+        applicationId "com.matsyuk.testablecodemobius"
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+retrolambda {
+    jdk System.getenv("JAVA8_HOME")
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.3.0'
+    compile 'com.android.support:design:23.3.0'
+    compile 'com.android.support:support-annotations:23.3.0'
+    // Rx
+    compile 'io.reactivex:rxandroid:1.1.0'
+    compile 'io.reactivex:rxjava:1.1.0'
+    // dagger2
+    compile 'com.google.dagger:dagger:2.0'
+    provided 'com.google.dagger:dagger-compiler:2.0'
+    provided 'org.glassfish:javax.annotation:10.0-b28'
+    // tests
+    testCompile 'junit:junit:4.12'
+    testCompile 'org.mockito:mockito-core:2.0.5-beta'
+    // AssertJ
+    testCompile "org.assertj:assertj-core:3.0.0"
+    // robolectric
+    testCompile "org.robolectric:robolectric:3.1-rc1"
+    testCompile "org.robolectric:shadows-support-v4:3.1-rc1"
+    // StorIO
+    compile 'com.pushtorefresh.storio:sqlite:1.8.0'
+    // RxBinding
+    compile 'com.jakewharton.rxbinding:rxbinding:0.4.0'
+}
