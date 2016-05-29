@@ -101,6 +101,20 @@ public class TransferFragment extends Fragment implements ITransferView {
     }
 
     @Override
+    public void showCommonError() {
+        Snackbar snackbar = Snackbar.make(coordinatorLayout, getString(R.string.common_error),
+                Snackbar.LENGTH_LONG);
+        snackbar.show();
+    }
+
+    @Override
+    public void showSuccess() {
+        Snackbar snackbar = Snackbar.make(coordinatorLayout, getString(R.string.transfer_success_text),
+                Snackbar.LENGTH_LONG);
+        snackbar.show();
+    }
+
+    @Override
     public void showAccountNumberError(String error) {
         accountNumberET.setError(error);
     }
@@ -110,17 +124,7 @@ public class TransferFragment extends Fragment implements ITransferView {
         amountET.setError(error);
     }
 
-    @Override
-    public void showCommonError() {
-        Snackbar snackbar = Snackbar.make(coordinatorLayout, getString(R.string.common_error), Snackbar.LENGTH_LONG);
-        snackbar.show();
-    }
-
-    @Override
-    public void showSuccess() {
-        Snackbar snackbar = Snackbar.make(coordinatorLayout, getString(R.string.transfer_success_text), Snackbar.LENGTH_LONG);
-        snackbar.show();
-    }
+    // another ITransferView methods
 
     @Override
     public void setEnableSendTransferButton(boolean enable) {

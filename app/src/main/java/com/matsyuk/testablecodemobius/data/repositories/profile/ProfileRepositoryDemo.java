@@ -23,7 +23,9 @@ public class ProfileRepositoryDemo implements IProfileRepository {
     public Single<PersonalAccountModel> getPersonalAccount() {
         return Observable.timer(2, TimeUnit.SECONDS)
                 .toSingle()
-                .flatMap(aLong -> Single.fromCallable(() -> new PersonalAccountModel("12345678901234567890", "1234567890123456")));
+                .flatMap(aLong -> Single.fromCallable(() ->
+                        new PersonalAccountModel("12345678901234567890", "1234567890123456"))
+                );
     }
 
     @Override
@@ -39,9 +41,12 @@ public class ProfileRepositoryDemo implements IProfileRepository {
     @Override
     public Single<List<PersonalDepartmentModel>> getPersonalDepartments() {
         return Single.fromCallable(() -> asList(
-                new PersonalDepartmentModel("first departments", "Russia, Moscow", "open in hours 9-18"),
-                new PersonalDepartmentModel("second departments", "Russia, Tver", "open in hours 10-18"),
-                new PersonalDepartmentModel("third departments", "Russia, Krasnodar", "open in hours 8-20")
+                new PersonalDepartmentModel(
+                        "first departments", "Russia, Moscow", "open in hours 9-18"),
+                new PersonalDepartmentModel(
+                        "second departments", "Russia, Tver", "open in hours 10-18"),
+                new PersonalDepartmentModel(
+                        "third departments", "Russia, Krasnodar", "open in hours 8-20")
         ));
     }
 

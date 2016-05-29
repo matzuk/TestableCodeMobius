@@ -12,12 +12,14 @@ import rx.Single;
 public interface IProfileInteractor {
 
     /**
-     * @return onError if PersonalInfo loading error was occurred in Repository, onSuccess in other cases
+     * @return onError if PersonalInfo loading error was occurred in Repository,
+     * onSuccess in other cases
      */
     Single<PersonalFullDataModel> getPersonalData();
 
     /**
-     * @return onError if loading was occurred or returned value == null, onSuccess in other cases
+     * @return onError if loading was occurred or returned value == null,
+     * onSuccess in other cases
      */
     Single<BigDecimal> updateBalance();
 

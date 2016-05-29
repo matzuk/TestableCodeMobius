@@ -3,6 +3,9 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
+    <dimen name="button_width">200dp</dimen>
+
+
     <dimen name="main_title_margin_bottom">24dp</dimen>
     <dimen name="main_margin_top">20dp</dimen>
     <dimen name="main_title_size">24sp</dimen>
@@ -14,6 +17,5 @@
 
     <dimen name="transfer_et_right_margin">32dp</dimen>
     <dimen name="transfer_send_button_top_margin">32dp</dimen>
-    <dimen name="transfer_send_button_width">200dp</dimen>
 
 </resources>

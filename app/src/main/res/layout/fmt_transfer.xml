@@ -90,10 +90,10 @@
 
             <Button
                 android:id="@+id/send_transfer"
-                android:layout_width="@dimen/transfer_send_button_width"
+                android:layout_width="@dimen/button_width"
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/amount_et"
-                android:background="@color/colorPrimary"
+                android:background="@drawable/common_button_bg"
                 android:textColor="@color/white"
                 android:layout_centerHorizontal="true"
                 android:text="@string/transfer_send_button_name"

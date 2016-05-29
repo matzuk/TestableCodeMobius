@@ -49,7 +49,8 @@ public class ProfileInteractor implements IProfileInteractor {
 
     private Single<PersonalAccountModel> getParsedPersonalAccount() {
         return iProfileRepository.getPersonalAccount()
-                .onErrorReturn(throwable -> new PersonalAccountModel(EMPTY_STRING, EMPTY_STRING));
+                .onErrorReturn(throwable ->
+                        new PersonalAccountModel(EMPTY_STRING, EMPTY_STRING));
     }
 
     private Single<PersonalBalanceModel> getParsedPersonalBalance() {

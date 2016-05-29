@@ -10,20 +10,20 @@
     tools:context=".ui.StartActivity">
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:text="@string/profile_button_text"
         android:id="@+id/profile_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="80dp"/>
+        android:layout_marginTop="72dp"/>
 
     <Button
-        android:layout_width="200dp"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
         android:text="@string/transfer_button_text"
         android:id="@+id/transfer_button"
         android:layout_below="@+id/profile_button"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="24dp" />
 
 </RelativeLayout>
