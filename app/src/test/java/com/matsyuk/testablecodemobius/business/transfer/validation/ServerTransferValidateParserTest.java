@@ -6,7 +6,7 @@ import com.matsyuk.testablecodemobius.BuildConfig;
 import com.matsyuk.testablecodemobius.data.network.models.request.transfer.TransferRequestModel;
 import com.matsyuk.testablecodemobius.data.network.models.response.transfer.ServerValidateErrorModel;
 import com.matsyuk.testablecodemobius.data.network.models.response.transfer.TransferValidateModel;
-import com.matsyuk.testablecodemobius.ui.transfer.models.ValidateErrorModel;
+import com.matsyuk.testablecodemobius.presentation.transfer.models.ValidateErrorModel;
 
 import org.junit.Before;
 import org.junit.Test;

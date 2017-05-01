@@ -5,7 +5,7 @@ import com.matsyuk.testablecodemobius.data.network.models.response.profile.Perso
 import com.matsyuk.testablecodemobius.data.network.models.response.profile.PersonalDepartmentModel;
 import com.matsyuk.testablecodemobius.data.network.models.response.profile.PersonalInfoModel;
 import com.matsyuk.testablecodemobius.data.repositories.profile.IProfileRepository;
-import com.matsyuk.testablecodemobius.ui.profile.models.PersonalFullDataModel;
+import com.matsyuk.testablecodemobius.presentation.profile.models.PersonalFullDataModel;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

@@ -8,8 +8,8 @@ import android.text.TextUtils;
 import com.matsyuk.testablecodemobius.R;
 import com.matsyuk.testablecodemobius.business.transfer.models.LocalValidateResultModel;
 import com.matsyuk.testablecodemobius.data.network.models.request.transfer.TransferRequestModel;
-import com.matsyuk.testablecodemobius.ui.transfer.models.TransferFilledDataModel;
-import com.matsyuk.testablecodemobius.ui.transfer.models.ValidateErrorModel;
+import com.matsyuk.testablecodemobius.presentation.transfer.models.TransferFilledDataModel;
+import com.matsyuk.testablecodemobius.presentation.transfer.models.ValidateErrorModel;
 
 import java.math.BigDecimal;
 import java.util.ArrayList;

@@ -4,7 +4,7 @@ import android.support.annotation.NonNull;
 
 import com.jakewharton.rxbinding.widget.TextViewTextChangeEvent;
 import com.matsyuk.testablecodemobius.data.network.models.response.transfer.TransferResultModel;
-import com.matsyuk.testablecodemobius.ui.transfer.models.TransferFilledDataModel;
+import com.matsyuk.testablecodemobius.presentation.transfer.models.TransferFilledDataModel;
 
 import rx.Observable;
 import rx.Single;

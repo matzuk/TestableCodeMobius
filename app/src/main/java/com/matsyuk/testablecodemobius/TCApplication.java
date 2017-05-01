@@ -4,9 +4,9 @@ import android.app.Application;
 import android.content.Context;
 import android.support.annotation.NonNull;
 
-import com.matsyuk.testablecodemobius.dagger.application.AppComponent;
-import com.matsyuk.testablecodemobius.dagger.application.AppModule;
-import com.matsyuk.testablecodemobius.dagger.application.DaggerAppComponent;
+import com.matsyuk.testablecodemobius.di.application.AppComponent;
+import com.matsyuk.testablecodemobius.di.application.AppModule;
+import com.matsyuk.testablecodemobius.di.application.DaggerAppComponent;
 
 /**
  * @author e.matsyuk

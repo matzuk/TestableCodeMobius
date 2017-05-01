@@ -9,7 +9,7 @@ import com.matsyuk.testablecodemobius.business.transfer.models.ServerValidateRes
 import com.matsyuk.testablecodemobius.data.network.models.request.transfer.TransferRequestModel;
 import com.matsyuk.testablecodemobius.data.network.models.response.transfer.ServerValidateErrorModel;
 import com.matsyuk.testablecodemobius.data.network.models.response.transfer.TransferValidateModel;
-import com.matsyuk.testablecodemobius.ui.transfer.models.ValidateErrorModel;
+import com.matsyuk.testablecodemobius.presentation.transfer.models.ValidateErrorModel;
 
 import java.util.ArrayList;
 import java.util.List;

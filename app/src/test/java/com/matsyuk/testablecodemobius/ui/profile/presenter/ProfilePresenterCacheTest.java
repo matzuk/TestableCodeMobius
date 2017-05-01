@@ -1,6 +1,7 @@
 package com.matsyuk.testablecodemobius.ui.profile.presenter;
 
-import com.matsyuk.testablecodemobius.ui.profile.models.PersonalFullDataModel;
+import com.matsyuk.testablecodemobius.presentation.profile.models.PersonalFullDataModel;
+import com.matsyuk.testablecodemobius.presentation.profile.presenter.ProfilePresenterCache;
 
 import org.junit.Test;
 

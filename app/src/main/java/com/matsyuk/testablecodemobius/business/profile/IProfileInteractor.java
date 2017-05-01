@@ -1,6 +1,6 @@
 package com.matsyuk.testablecodemobius.business.profile;
 
-import com.matsyuk.testablecodemobius.ui.profile.models.PersonalFullDataModel;
+import com.matsyuk.testablecodemobius.presentation.profile.models.PersonalFullDataModel;
 
 import java.math.BigDecimal;
 

@@ -2,7 +2,7 @@ package com.matsyuk.testablecodemobius.business.transfer.validation;
 
 import android.support.annotation.NonNull;
 
-import com.matsyuk.testablecodemobius.ui.transfer.models.ValidateErrorModel;
+import com.matsyuk.testablecodemobius.presentation.transfer.models.ValidateErrorModel;
 
 import java.util.List;
 

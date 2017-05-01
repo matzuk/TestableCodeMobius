@@ -7,7 +7,7 @@ import com.matsyuk.testablecodemobius.business.transfer.validation.LocalTransfer
 import com.matsyuk.testablecodemobius.business.transfer.validation.ServerTransferValidateParser;
 import com.matsyuk.testablecodemobius.data.network.models.response.transfer.TransferResultModel;
 import com.matsyuk.testablecodemobius.data.repositories.transfer.ITransferRepository;
-import com.matsyuk.testablecodemobius.ui.transfer.models.TransferFilledDataModel;
+import com.matsyuk.testablecodemobius.presentation.transfer.models.TransferFilledDataModel;
 
 import rx.Observable;
 import rx.Single;
