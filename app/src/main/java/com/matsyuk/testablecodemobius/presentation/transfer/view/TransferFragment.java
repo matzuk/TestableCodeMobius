@@ -13,6 +13,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 
 import com.jakewharton.rxbinding.widget.RxTextView;
+import com.jakewharton.rxbinding.widget.TextViewTextChangeEvent;
 import com.matsyuk.testablecodemobius.R;
 import com.matsyuk.testablecodemobius.TCApplication;
 import com.matsyuk.testablecodemobius.di.transfer.TransferModule;
@@ -20,6 +21,8 @@ import com.matsyuk.testablecodemobius.presentation.transfer.models.TransferFille
 import com.matsyuk.testablecodemobius.presentation.transfer.presenter.ITransferPresenter;
 
 import javax.inject.Inject;
+
+import rx.Observable;
 
 /**
  * @author e.matsyuk
@@ -60,7 +63,10 @@ public class TransferFragment extends Fragment implements ITransferView {
         coordinatorLayout = (CoordinatorLayout) view.findViewById(R.id.main_transfer_layout);
         // presenter
         iTransferPresenter.bindView(this);
-        iTransferPresenter.listenFields(RxTextView.textChangeEvents(orgNameET), RxTextView.textChangeEvents(amountET));
+        iTransferPresenter.listenFields(
+                RxTextView.textChangeEvents(orgNameET).map(textViewTextChangeEvent -> textViewTextChangeEvent.text().toString()),
+                RxTextView.textChangeEvents(amountET).map(textViewTextChangeEvent -> textViewTextChangeEvent.text().toString())
+        );
         return view;
     }
 

@@ -15,6 +15,6 @@ import rx.Single;
 public interface ITransferInteractor {
 
     Single<TransferResultModel> sendTransfer(@NonNull TransferFilledDataModel transferFilledDataModel);
-    Observable<Boolean> controlSendButton(@NonNull Observable<TextViewTextChangeEvent> orgNameFieldListener, @NonNull Observable<TextViewTextChangeEvent> amountFieldListener);
+    Observable<Boolean> controlSendButton(@NonNull Observable<String> orgNameFieldListener, @NonNull Observable<String> amountFieldListener);
 
 }

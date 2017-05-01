@@ -45,8 +45,8 @@ public class TransferPresenter implements ITransferPresenter {
     }
 
     @Override
-    public void listenFields(@NonNull Observable<TextViewTextChangeEvent> orgNameFieldListener,
-                             @NonNull Observable<TextViewTextChangeEvent> amountFieldListener) {
+    public void listenFields(@NonNull Observable<String> orgNameFieldListener,
+                             @NonNull Observable<String> amountFieldListener) {
         iTransferInteractor.controlSendButton(orgNameFieldListener, amountFieldListener)
                 .subscribe(iTransferView::setEnableSendTransferButton, throwable -> {});
     }

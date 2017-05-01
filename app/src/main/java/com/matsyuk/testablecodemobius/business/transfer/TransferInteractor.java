@@ -40,22 +40,14 @@ public class TransferInteractor implements ITransferInteractor {
 
     @Override
     public Observable<Boolean> controlSendButton(
-            @NonNull Observable<TextViewTextChangeEvent> orgNameFieldListener,
-            @NonNull Observable<TextViewTextChangeEvent> amountFieldListener) {
+            @NonNull Observable<String> orgNameFieldListener,
+            @NonNull Observable<String> amountFieldListener) {
         return Observable.combineLatest(
-                orgNameFieldListener.compose(getChangedTextTransformer()),
-                amountFieldListener.compose(getChangedTextTransformer()),
+                orgNameFieldListener.startWith(EMPTY_STRING),
+                amountFieldListener.startWith(EMPTY_STRING),
                 (orgName, amount) -> !orgName.isEmpty() && !amount.isEmpty()
             )
                 .distinctUntilChanged();
     }
-
-    private Observable.Transformer<TextViewTextChangeEvent, String> getChangedTextTransformer()  {
-        return objectObservable -> (objectObservable
-                .map(textViewTextChangeEvent -> textViewTextChangeEvent.text().toString()))
-                .startWith(EMPTY_STRING);
-
-    }
-
 
 }

@@ -16,7 +16,7 @@ public interface ITransferPresenter {
     void bindView(@NonNull ITransferView iTransferView);
     void unbindView();
 
-    void listenFields(@NonNull Observable<TextViewTextChangeEvent> orgNameFieldListener, @NonNull Observable<TextViewTextChangeEvent> amountFieldListener);
+    void listenFields(@NonNull Observable<String> orgNameFieldListener, @NonNull Observable<String> amountFieldListener);
     void sendTransfer(@NonNull TransferFilledDataModel transferFilledDataModel);
 
 }
