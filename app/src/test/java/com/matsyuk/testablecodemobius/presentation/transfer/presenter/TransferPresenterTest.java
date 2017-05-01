@@ -1,11 +1,10 @@
-package com.matsyuk.testablecodemobius.ui.transfer.presenter;
+package com.matsyuk.testablecodemobius.presentation.transfer.presenter;
 
 import com.matsyuk.testablecodemobius.business.transfer.ITransferInteractor;
 import com.matsyuk.testablecodemobius.business.transfer.validation.TransferValidateException;
 import com.matsyuk.testablecodemobius.data.network.models.response.transfer.TransferResultModel;
 import com.matsyuk.testablecodemobius.presentation.transfer.models.TransferFilledDataModel;
 import com.matsyuk.testablecodemobius.presentation.transfer.models.ValidateErrorModel;
-import com.matsyuk.testablecodemobius.presentation.transfer.presenter.TransferPresenter;
 import com.matsyuk.testablecodemobius.presentation.transfer.view.ITransferView;
 import com.matsyuk.testablecodemobius.utils.rx.RxSchedulersAbs;
 import com.matsyuk.testablecodemobius.utils.rx.RxSchedulersTest;
